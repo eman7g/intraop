@@ -1,0 +1,27 @@
+// Links list
+
+@mixin links-list($link-color, $link-icon-color, $text-decoration: "underline") {
+  margin:0;
+  padding:0;
+  list-style:none;
+
+  li{
+
+    a{
+      text-decoration: $text-decoration;
+      color:$link-color;
+
+      &:before{
+        content:"\e072";
+        color:$link-icon-color;
+        font-size:10px;
+        margin-right:10px;
+        display:inline-block;
+        font-family:'Glyphicons Halflings';
+        font-style:normal;
+        font-weight:400;
+        -webkit-font-smoothing:antialiased;
+      }
+    }
+  }
+}
