@@ -1,3 +1,7 @@
+//
+// Footer
+// --------------------------------------------------
+
 footer.content-info{
   color:$white;
 
@@ -19,21 +23,13 @@ footer.content-info{
     }
 
     h5{
+      font-family: $font-family-sans-serif;
       color:$gray-light;
       font-weight:bold;
     }
 
     ul{
-      @include links-list($white, $gray-dark, "none");
-
-      li{
-        a{
-          &:hover{
-            color:#A4D65E;
-            text-decoration: underline;
-          }
-        }
-      }
+      @include links-list($white, $gray-dark, $brand-success-secondary, none, underline);
     }
 
     @media (max-width: $screen-xs-max){

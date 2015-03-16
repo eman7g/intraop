@@ -1,3 +1,8 @@
+//
+// Typography
+// --------------------------------------------------
+
+
 /* @import must be at top of file, otherwise CSS will not work */
 @import url("//hello.myfonts.net/count/2d95f7");
 
@@ -14,6 +19,20 @@
 @font-face {font-family: 'Soleto';font-weight: normal;font-style: normal;src: url('../../assets/fonts/2D95F7_3_0.eot');src: url('../../assets/fonts/2D95F7_3_0.eot?#iefix') format('embedded-opentype'),url('../../assets/fonts/2D95F7_3_0.woff2') format('woff2'),url('../../assets/fonts/2D95F7_3_0.woff') format('woff'),url('../../assets/fonts/2D95F7_3_0.ttf') format('truetype');}
  
 
- h1{
-  font-weight:bold;
+
+// Headings
+// -------------------------
+
+h1, .h1, h2, .h2, h3, .h3 {
+  padding-top: 22px;
+  padding-bottom: 11px;
+  margin:0;
+}
+
+h1,.h1{
+  color:$brand-primary;
+}
+
+h2, .h2{
+  color:$brand-tertiary;
 }

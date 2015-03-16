@@ -1,4 +1,3 @@
-@import "common/_typography";
 @import "common/_variables";
 
 // bower:scss
@@ -6,6 +5,7 @@
 // endbower
 
 @import "common/_global";
+@import "common/_typography";
 @import "common/_mixins";
 @import "components/_buttons";
 @import "components/_forms";
@@ -14,6 +14,7 @@
 @import "layouts/_header";
 @import "layouts/_sidebar";
 @import "layouts/_footer";
+@import "layouts/_home";
 @import "layouts/_pages";
 @import "layouts/_posts";
 

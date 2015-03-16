@@ -1,0 +1,135 @@
+//
+// Home
+// --------------------------------------------------
+
+section{
+  position:relative;
+}
+
+.defining-statement{
+  text-align: center;
+  padding:80px 0;
+
+  h1{
+    margin-bottom:20px;
+  }
+
+  p{
+    font-size:$font-size-large;
+    color: $gray-dark;
+  }
+}
+
+.audience{
+
+  .container{
+    padding-top:95px;
+    padding-bottom:95px;
+  }
+
+  .content{
+    background:$white;
+    padding:0 40px 40px;
+
+    h2{
+      color:$brand-primary;
+    }
+
+    p{
+      margin-bottom:20px;
+    }
+
+    .btn{
+      margin-bottom:30px;
+    }
+
+    .additional{
+      margin:0 -39px;
+      border-top:1px solid rgba($gray-lightest, .25);
+    }
+
+    ul{
+      @include links-list($brand-secondary, $brand-success-secondary, $brand-success);
+      padding:0 39px;
+      margin:35px 0 0;
+    }
+  }
+
+  @media (max-width: $screen-sm-max){
+    .content{
+      margin-bottom: 40px;
+    }
+  }
+
+}
+
+.recent-news{
+  text-align:center;
+  padding-top: 35px;
+  padding-bottom: 90px;
+
+  h2{
+    padding-bottom:50px;
+  }
+
+  article{
+    .entry-content{
+
+      .entry-meta{
+
+        .post-date{
+          font-family: $font-family-sans-serif;
+          font-weight: bold;
+          text-transform: uppercase;
+          text-align:center;
+
+          strong{
+            font-size:27px;
+            font-style:normal;
+            display:block;
+          }
+        }
+      }
+
+      .post-title{
+        text-align:left;
+
+        a{
+          font-size:$font-size-large;
+          color:$gray-darkest;
+        }      
+      }
+    }
+  }
+
+  @media (max-width: $screen-sm-max){
+    article{
+      
+      .entry-content{
+        .post-title{
+          text-align:center;
+        }
+      }
+    }
+  }  
+
+}
+
+.content-highlight{
+  padding:150px 0;
+  background: url('../../assets/images/intraop-geometric-gray.png') repeat-x center top;
+  background-size:cover;
+
+  .row{
+    > div:nth-child(2n+1){
+      clear:left;
+    }
+  }
+
+  .content{
+    background:$white;
+    padding:40px;
+    border-top:8px solid $brand-primary;
+    margin-bottom:40px;
+  }
+}

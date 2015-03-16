@@ -1,6 +1,10 @@
-// Links list
+//
+// Mixins
+// --------------------------------------------------
 
-@mixin links-list($link-color, $link-icon-color, $text-decoration: "underline") {
+
+// Links list
+@mixin links-list($link-color, $link-icon-color, $link-hover-color, $text-decoration: underline, $text-hover-decoration: underline) {
   margin:0;
   padding:0;
   list-style:none;
@@ -21,6 +25,11 @@
         font-style:normal;
         font-weight:400;
         -webkit-font-smoothing:antialiased;
+      }
+
+      &:hover{
+        color:$link-hover-color;
+        text-decoration: $text-hover-decoration;
       }
     }
   }

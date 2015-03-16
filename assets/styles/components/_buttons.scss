@@ -1,3 +1,15 @@
+//
+// Buttons
+// --------------------------------------------------
+
 .btn{
   font-family: $font-family-sans-serif;
+}
+
+.btn-default{
+  &:hover, &:focus, &:active{
+    background: $brand-success;
+    color:$white;
+    border-color:$brand-success;
+  }
 }

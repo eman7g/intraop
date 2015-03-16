@@ -1,3 +1,8 @@
+//
+// Header
+// --------------------------------------------------
+
+
 .header-wrap{
   position:relative;
 }
@@ -6,7 +11,7 @@
   position:relative;
   width:100%;
   display:block;
-  box-shadow: 0 4px 0 rgba(65,63,78,.1);
+  box-shadow: 0 4px 0 rgba($gray-darkest,.1);
   z-index:2000;
 
   @media (max-width: $screen-xs-max){
@@ -19,7 +24,7 @@
 }
 
 .header-top{
-  background:rgba(217,217,214,.5);
+  background:rgba($gray-lightest,.5);
   z-index:1001;
   position:relative;
 
@@ -60,7 +65,7 @@
         .dropdown-menu{
           border:0;
           border-radius:0;
-          box-shadow:4px 4px 0px rgba(65,68,73,.2);
+          box-shadow:4px 4px 0px rgba($gray-darkest,.2);
           padding:0;
           margin:0;
           right:-1px;
@@ -70,7 +75,7 @@
         form{
           display:block;
           padding:8px;
-          background:rgba(217,217,214,.5);
+          background:rgba($gray-lightest,.5);
           width:270px;
           @include clearfix();
 
@@ -144,7 +149,7 @@
       -webkit-transition: padding 0.5s ease-in-out;
       -o-transition: padding 0.5s ease-in-out;
       max-width:none;
-      box-shadow: 0 4px 0 rgba(65,63,78,.1);
+      box-shadow: 0 4px 0 rgba($gray-darkest,.1);
 
 
       &.sticky-header-resized{
@@ -227,7 +232,7 @@
       > .dropdown-menu{
         border:0;
         border-radius:0;
-        box-shadow:4px 4px 0px rgba(65,68,73,.2);
+        box-shadow:4px 4px 0px rgba($gray-darkest,.2);
         padding:0;
 
         >li{
@@ -280,11 +285,11 @@
               font-size:14px;
               font-family: $font-family-sans-serif;
               color:$gray-darker !important;;
-              background:rgba(217,217,214,.25);
+              background:rgba($gray-lightest,.25);
               padding-left:40px;
 
               &:hover, &:focus, &:link{
-                background:rgba(217,217,214,.25) !important;;
+                background:rgba($gray-lightest,.25) !important;;
               }
             }
           }
@@ -347,14 +352,14 @@
 
   .navbar-toggle{
     border-radius:0;
-    background:rgba(217,217,214,.25);
+    background:rgba($gray-lightest,.25);
     border:0;
     padding:10px;
     margin-top:4px;
     margin-bottom:0;
 
     &:hover, &:active, &.active{
-      background:rgba(217,217,214,.25);
+      background:rgba($gray-lightest,.25);
     }
 
     .icon-bar {
